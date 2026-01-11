@@ -50,24 +50,28 @@ header {
   width: 80vw;
 
   & h1 {
-    font-size: 5rem;
+    font-size: 8rem;
     letter-spacing: -1px;
     font-weight: 500;
+    font-family: "Spectral";
   }
 
   & div:first-child {
     width: 50vw;
   }
-  & p:first-of-type {
+  & .middleText {
     margin-block: 3rem;
+    font-size: 2rem;
+    font-family: "Spectral";
   }
 
   & span {
     width: 200px;
     border-radius: 20px;
-    border: solid;
-    background-color: black;
+    border: solid #191919;
+    background-color: #191919;
     color: white;
+    font-family: "Spectral";
   }
 
   & img {
@@ -275,7 +279,6 @@ header {
         justify-content: space-between;
         margin-block-end: 70px;
         width: 45vw;
-        
 
         & div:first-of-type {
           width: 45vw;
@@ -316,7 +319,6 @@ header {
               & img:last-of-type {
                 float: right;
                 vertical-align: center;
-                
               }
             }
           }
@@ -337,13 +339,13 @@ header {
     position: sticky;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     width: 24vw;
     box-sizing: border-box;
 
     & h3 {
-      display: block;
-
+      display: flex;
+      justify-content: start;
       font-weight: 600;
     }
     & .tags {
