@@ -74,7 +74,7 @@ header {
     font-family: "Spectral";
   }
 
-  & img {
+  & svg {
     width: 50vw;
     height: 100%;
     transform: translate3d(15vw, 0px, 0px);
@@ -419,3 +419,4 @@ header {
     border-color: #191919;
   }
 }
+
