@@ -24,13 +24,17 @@ const scroll = () => {
 };
 
 const animateLetters = () => {
-
+  letters.forEach((letter) => {
+    if (!letter.hasAttribute("opacity")) {
+      letter.setAttribute("opacity", "1");
+    }
+  });
   const randomIndex = Math.floor(Math.random() * letters.length);
   const singleLetter = letters[randomIndex];
-   const currentOpacity = singleLetter.getAttribute("opacity");
-    singleLetter.setAttribute("opacity", currentOpacity === "0" ? "1" : "0");
+  const currentOpacity = singleLetter.getAttribute("opacity");
+  singleLetter.setAttribute("opacity", currentOpacity === "0" ? "1" : "0");
 };
-window.onscroll = scroll
+window.onscroll = scroll;
 window.addEventListener("load", () => {
   setInterval(animateLetters, 50);
 });
