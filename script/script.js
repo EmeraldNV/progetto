@@ -30,7 +30,7 @@ const animateLetters = () => {
    const currentOpacity = singleLetter.getAttribute("opacity");
     singleLetter.setAttribute("opacity", currentOpacity === "0" ? "1" : "0");
 };
-
+window.onscroll = scroll
 window.addEventListener("load", () => {
   setInterval(animateLetters, 50);
 });
